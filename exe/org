@@ -3,4 +3,5 @@
 
 require "image/organizer"
 
-puts "Organizing images..."
+# boot image organizer
+Image::Organizer::CLI.start

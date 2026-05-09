@@ -1,6 +1,41 @@
 module Image
   module Organizer
+    BASE_COLOR: String
+    FAIL_COLOR: String
+    PASS_COLOR: String
+    WARN_COLOR: String
     VERSION: String
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+    class CLI
+      def self.exit_on_failure?: -> bool
+
+      def self.start: -> untyped
+
+      def help: -> untyped
+
+      def pretend: -> untyped
+
+      def process: -> untyped
+
+      def tree: -> untyped
+
+      def version: -> untyped
+    end
+
+    def self.pretend: -> untyped
+
+    def self.process: -> untyped
+
+    def self.setup: -> untyped
+
+    def self.version: -> untyped
+
+    private
+
+    def self.session_layout?: (bool _dry_run) -> bool
+
+    def self.session_ingest?: (bool _dry_run) -> bool
+
+    def self.session_status?: (bool _dry_run) -> bool
   end
 end
