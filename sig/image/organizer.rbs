@@ -22,6 +22,16 @@ module Image
       def version: -> untyped
     end
 
+    self.@matched_id_lines: untyped
+
+    def self.extract_sequences: (array[String] lines) -> untyped
+
+    def self.extract_volumes: (array[String] id_lines) -> untyped
+
+    def self.fetch_info: (String line) -> String
+
+    def self.filter_lines: (array[String] lines) -> untyped
+
     def self.pretend: -> untyped
 
     def self.process: -> untyped
